@@ -1,0 +1,279 @@
+aside, img, object, embed, video {
+  max-width: 100%;
+}
+
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+  width: 100%;
+}
+
+/* Clearfix */
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+/* Basic Styles */
+#container {
+  max-width: 62em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav {
+  height: 40px;
+  width: 100%;
+  background-color: #357EC7;
+  font-size: 10pt;
+  font-family: Arial, Verdana, sans-serif;
+  font-weight: bold;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0 auto;
+  width: 1000px;
+  height: 40px;
+}
+
+nav li {
+  display: inline;
+  float: left;
+}
+
+nav a {
+  color: #fff;
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 40px;
+  text-shadow: 1px 1px 0px #283744;
+}
+
+nav li a {
+  border-right: 1px solid #FAFAFA;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+nav li:last-child a {
+  border-right: 0;
+}
+
+nav a:hover, nav a:active {
+  background-color: #87CEFA;
+}
+
+nav a#pull {
+  display: none;
+}
+
+/* HEADER STYLES */
+header {
+  padding: 10px;
+  border-bottom: solid 0.5rem #357EC7;
+  border-bottom-style: dotted;
+}
+
+header h1 {
+  font-family: arial, verdana, sans-serif;
+  margin-top: 1rem;
+  text-align: center;
+  color: #357EC7;
+}
+
+header h2 {
+  text-align: right;
+  font-family: arial, tahoma, sans-serif;
+  text-align: center;
+  color: #87CEFA;
+}
+
+/* SECTION STYLES */
+section {
+  font-family: arial, tahoma, sans-serif;
+}
+
+section h1 {
+  font-family: arial, verdana, sans-serif;
+}
+
+/* ASIDE STYLES */
+aside {
+  float: right;
+  width: 18.5em;
+  min-width: 280px;
+  border: solid 2px #000000;
+  background-color: #cccccc;
+  padding: .6em;
+  margin-left: .6em;
+  font-size: .8em;
+}
+
+aside h2 {
+  text-align: center;
+}
+
+/* FIGURE STYLES */
+figure {
+  margin: 1rem 0 1rem 0;
+  background-color: #000000;
+  min-width: 280px;
+}
+
+figcaption {
+  text-align: center;
+  color: #ffffff;
+  font-size: .8em;
+}
+
+/*IMAGE FLOAT */
+.imgCenter {
+  position: relative;
+}
+
+/* Gallery */
+div.gallery {
+  margin: 1rem 0rem;
+  border: 1px solid #ccc;
+  float: left;
+  width: 100%;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 0.5rem;
+  text-align: center;
+}
+
+/* FOOTER STYLES */
+footer {
+  padding-top: .6em;
+  font-size: .8em;
+  font-family: arial, tahoma, sans-serif;
+}
+
+.footer1 {
+  margin-top: 35rem;
+}
+
+/*Styles for screen 1000px and lower*/
+@media screen and (max-width: 1000px) {
+  #container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  nav {
+    height: auto;
+    padding: 0;
+  }
+
+  nav ul {
+    width: 100%;
+    display: block;
+    height: auto;
+  }
+
+  nav li {
+    width: 50%;
+    float: left;
+    position: relative;
+  }
+
+  nav li a {
+    border-bottom: 1px solid #FAFAFA;
+    border-right: 1px solid #FAFAFA;
+  }
+
+  nav a {
+    text-align: left;
+    width: 100%;
+    text-indent: 25px;
+  }
+}
+
+/*Styles for screen 500px and lower*/
+@media only screen and (max-width : 500px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+
+  #container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  nav {
+    border-bottom: 0;
+  }
+
+  nav ul {
+    display: none;
+    height: auto;
+  }
+
+  nav a#pull {
+    display: block;
+    background-color: #283744;
+    width: 100%;
+    position: relative;
+  }
+
+  nav a#pull:after {
+    content: "";
+    background: url('../images/nav-icon.png') no-repeat;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+  }
+}
+
+
+/*Styles for screen 320px and lower*/
+@media only screen and (max-width : 320px) {
+  h1 {
+    font-size: 1.3rem;
+  }
+  h2 {
+    font-size: 0.8rem;
+  }
+
+  #container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  nav li {
+    display: block;
+    float: none;
+    width: 100%;
+  }
+
+  nav li a {
+    border-bottom: 1px solid #FAFAFA;
+  }
+}
